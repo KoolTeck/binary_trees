@@ -1,3 +1,4 @@
+
 #include "binary_trees.h"
 
 /**
@@ -12,8 +13,8 @@ size_t left, right;
 int b_fact = 0;
 if (tree)
 {
-left = tree->left ? 1 + binary_tree_height(tree->left) : 0;
-right = tree->right ? 1 + binary_tree_height(tree->right) : 0;
+left = tree->left ? 1 + binary_tree_balance(tree->left) : 0;
+right = tree->right ? 1 + binary_tree_balance(tree->right) : 0;
 b_fact = left - right;
 return (b_fact);
 }
