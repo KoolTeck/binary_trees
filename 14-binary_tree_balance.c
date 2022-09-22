@@ -15,11 +15,7 @@ if (tree)
 left = tree->left ? 1 + binary_tree_height(tree->left) : 0;
 right = tree->right ? 1 + binary_tree_height(tree->right) : 0;
 b_fact = left - right;
-if (b_fact < 0 )
-{
 return (b_fact);
-}
-
 }
 return (0);
 }
